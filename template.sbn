@@ -1,1 +1,10 @@
 Hello {{user_name}}!
+
+Your order shall be delivered to: {{address}}
+
+These items:
+{{- for item in items }}
+ * {{ item.quantity }} x {{ item.name }}
+{{- end }}
+
+Thanks
